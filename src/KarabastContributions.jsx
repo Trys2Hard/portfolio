@@ -11,7 +11,7 @@ export default function KarabastContributions() {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', m: '3rem auto 0 auto', border: '2px solid blue', width: '60%', p: '1rem', borderRadius: '10px', backgroundColor: 'gray' }}>
             <Typography variant='h4' component='h3' sx={{ mb: '1rem' }}>Open Source Contributions</Typography>
-            <Typography variant='p' component='p' sx={{ mb: '1rem' }}>Contributions that I have made to Karabast.net, an open source project on Github. I started contributing to the project a few weeks before the beta launch.</Typography>
+            <Typography variant='p' component='p' sx={{ mb: '1rem' }}>Contributions that I have made to Karabast.net, an open source project on Github.</Typography>
             <ImageList cols={1} sx={{ width: '100%', maxHeight: '400px' }}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
