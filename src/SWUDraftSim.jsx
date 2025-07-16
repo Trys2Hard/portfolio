@@ -3,17 +3,17 @@ import LinkButton from './LinkButton';
 
 const itemData = [
     {
-        img: 'Karabast.png',
-        title: 'Karabast',
+        img: 'swudraftsim.png',
+        title: 'swudraftsim',
     },
 ];
 
-export default function KarabastContributions() {
+export default function SWUDraftSim() {
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', m: '3rem auto 0 auto', width: '60%', p: '1rem', borderRadius: '10px', backgroundColor: 'rgba(153, 153, 153, 1)' }}>
-            <Typography variant='h4' component='h3' sx={{ mb: '1rem', textAlign: 'center' }}>Open Source Contributions</Typography>
-            <Typography variant='p' component='p' sx={{ mb: '1rem', textAlign: 'center' }}>Contributions that I have made to Karabast.net, an open source project on Github.</Typography>
-            <ImageList cols={1}>
+            <Typography variant='h4' component='h3' sx={{ mb: '1rem', textAlign: 'center' }}>SWUDraftSim.com</Typography>
+            <Typography variant='p' component='p' sx={{ mb: '1rem', textAlign: 'center' }}>A Star Wars Unlimited TCG Draft Simulator</Typography>
+            <ImageList cols={1} sx={{ width: '100%', maxHeight: '400px' }}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img} sx={{ width: '75%', m: '0 auto 0 auto' }}>
                         <img
@@ -25,7 +25,10 @@ export default function KarabastContributions() {
                     </ImageListItem>
                 ))}
             </ImageList>
-            <LinkButton href='https://github.com/SWU-Karabast/forceteki-client/pulls?q=is%3Apr+is%3Amerged+author%3ATrys2Hard+' children='My Contributions' />
+            <Box sx={{ display: 'flex', gap: '1rem' }}>
+                <LinkButton href='https://github.com/Trys2Hard/swu-draft-sim' children='Source Code' />
+                <LinkButton href='https://www.swudraftsim.com/' children='Website' />
+            </Box>
         </Box>
     );
 }
