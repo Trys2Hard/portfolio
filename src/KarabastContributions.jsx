@@ -1,31 +1,24 @@
-import { ImageList, ImageListItem, Box, Typography } from '@mui/material';
-import LinkButton from './LinkButton';
-
-const itemData = [
-    {
-        img: 'Karabast.png',
-        title: 'Karabast',
-    },
-];
+import DefaultProject from './DefaultProject';
 
 export default function KarabastContributions() {
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', m: '3rem auto 0 auto', width: '60%', p: '1rem', borderRadius: '10px', backgroundColor: 'rgba(153, 153, 153, 1)' }}>
-            <Typography variant='h4' component='h3' sx={{ mb: '1rem', textAlign: 'center' }}>Open Source Contributions</Typography>
-            <Typography variant='p' component='p' sx={{ mb: '1rem', textAlign: 'center' }}>Contributions that I have made to Karabast.net, an open source project on Github.</Typography>
-            <ImageList cols={1}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img} sx={{ width: '75%', m: '0 auto 0 auto' }}>
-                        <img
-                            srcSet={item.img}
-                            src={item.img}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList>
-            <LinkButton href='https://github.com/SWU-Karabast/forceteki-client/pulls?q=is%3Apr+is%3Amerged+author%3ATrys2Hard+' children='My Contributions' />
-        </Box>
+        <DefaultProject
+            src='Karabast.png'
+            projectTitle='Open Source Contributions'
+            projectSubtitle={
+                <>
+                    <strong>20+</strong> contributions made to{' '}
+                    <a
+                        href="https://www.karabast.net"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'inherit', textDecoration: 'underline' }}
+                    >
+                        Karabast.net
+                    </a>.
+                </>}
+            buttons={[
+                { href: 'https://github.com/SWU-Karabast/forceteki-client/pulls?q=is%3Apr+is%3Amerged+author%3ATrys2Hard+', label: 'Contributions' },
+            ]} />
     );
 }
