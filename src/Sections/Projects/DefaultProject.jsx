@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import LinkButton from './LinkButton';
+import LinkButton from '../../LinkButton';
 
 export default function DefaultProject({ src, projectTitle, projectSubtitle, buttons = [] }) {
     const styles = {

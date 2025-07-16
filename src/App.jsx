@@ -1,10 +1,9 @@
-import './App.css'
 import { CssBaseline, Box } from '@mui/material';
-import Showcase from './Showcase';
-import Skills from './Skills';
-import Projects from './Projects';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Showcase from './Sections/Showcase';
+import Skills from './Sections/Skills';
+import Projects from './Sections/Projects/Projects';
+import Navbar from './Sections/Navbar';
+import Footer from './Sections/Footer';
 
 function App() {
   return (

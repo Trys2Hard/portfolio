@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
-import KarabastContributions from './KarabastContributions';
-import SWUDraftSim from './SWUDraftSim';
+import KarabastContributions from './CustomProjects/KarabastContributions';
+import SWUDraftSim from './CustomProjects/SWUDraftSim';
 
 export default function Projects() {
     return (
