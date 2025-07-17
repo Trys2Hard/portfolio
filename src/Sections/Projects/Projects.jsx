@@ -1,13 +1,13 @@
-import { Typography } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import KarabastContributions from './CustomProjects/KarabastContributions';
 import SWUDraftSim from './CustomProjects/SWUDraftSim';
 
 export default function Projects() {
     return (
-        <>
-            <Typography variant='h3' component='h2' sx={{ textAlign: 'center', mt: '5rem' }}>Projects</Typography>
+        <Box id='projects' sx={{ pt: '5rem' }}>
+            <Typography variant='h3' component='h2' sx={{ textAlign: 'center' }}>Projects</Typography>
             <SWUDraftSim />
             <KarabastContributions />
-        </>
+        </Box>
     );
 }

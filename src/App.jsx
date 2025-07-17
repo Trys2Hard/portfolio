@@ -4,10 +4,14 @@ import Skills from './Sections/Skills';
 import Projects from './Sections/Projects/Projects';
 import Navbar from './Sections/Navbar';
 import Footer from './Sections/Footer';
+import { GlobalStyles } from '@mui/material';
 
 function App() {
   return (
     <>
+      <GlobalStyles styles={{
+        html: { scrollBehavior: 'smooth' },
+      }} />
       <CssBaseline />
       <Box sx={{ background: 'linear-gradient(to right, rgba(9, 17, 169, 0.7),rgba(32, 141, 32, 0.5))' }}>
         <Navbar />

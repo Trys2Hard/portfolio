@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', background: 'gray', p: '0.5rem', mt: '1rem' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', backgroundColor: 'rgba(153, 153, 153, 1)', p: '0.5rem', mt: '5rem' }}>
             <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit' }}>
                 <GitHubIcon fontSize='large' />
             </Link>

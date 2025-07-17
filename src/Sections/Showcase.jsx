@@ -6,7 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Showcase() {
     return (
-        <Box sx={{ m: '0 auto 0 auto', pt: '6rem', width: '50%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <Box id='home' sx={{ m: '0 auto 0 auto', p: '6rem 0 5rem 0', width: '40%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <Box>
                 <Typography variant='h4' component='h1' sx={{ translate: '-0.08rem 0' }}>Hello, I'm Keith LePoidevin</Typography>
                 <Typography variant='h6' component='h2' sx={{ lineHeight: '1.2rem' }}>A Full-Stack developer with a focus on Front-End React</Typography>
@@ -29,9 +29,7 @@ export default function Showcase() {
                     </Box>
                 </Box>
             </Box>
-            <Box>
-                <img style={{ width: '15rem' }} src="profile-pic-placeholder.jpg" alt='profile image' />
-            </Box>
+            <Box component='img' src="profile-pic-placeholder.jpg" alt='profile image' style={{ width: '10rem', height: '100%' }} />
         </Box>
     )
 }

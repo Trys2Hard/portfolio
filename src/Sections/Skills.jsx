@@ -5,7 +5,9 @@ const styles = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
-        width: '75%', m: '0 auto 0 auto',
+        width: '75%',
+        m: '0 auto 0 auto',
+        pb: '5rem',
         '& .MuiBox-root': {
             display: 'flex',
             flexDirection: 'column',
@@ -23,8 +25,8 @@ const styles = {
 
 export default function Skills() {
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <Typography variant='h3' component='h2' sx={{ m: '5rem 0 1rem 0' }}>Skills</Typography>
+        <Box id='skills' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', pt: '5rem' }}>
+            <Typography variant='h3' component='h2' sx={{ pb: '2rem' }}>Skills</Typography>
             <Box sx={styles.skills}>
                 <Box>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />

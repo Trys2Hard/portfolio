@@ -7,7 +7,7 @@ export default function KarabastContributions() {
             projectTitle='Open Source Contributions'
             projectSubtitle={
                 <>
-                    <strong>20+</strong> contributions made to{' '}
+                    <strong style={{ color: 'green' }}>20+</strong> contributions made to{' '}
                     <a
                         href="https://www.karabast.net"
                         target="_blank"
