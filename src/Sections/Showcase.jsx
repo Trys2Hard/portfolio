@@ -5,31 +5,58 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function Showcase() {
+    const styles = {
+        container: {
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            justifyContent: 'center',
+            alignItems: { xs: 'center', sm: 'flex-start' },
+            width: '100%',
+            p: '6rem 1rem 5rem 1rem',
+
+        },
+        githubIcon: {
+            color: 'inherit',
+            '&:hover': {
+                color: 'rgba(33, 52, 253, 1)',
+            },
+        },
+        linkedinIcon: {
+            color: 'inherit',
+            mt: '0.2rem',
+            '&:hover': {
+                color: 'rgba(33, 52, 253, 1)',
+            },
+        },
+        profilePhoto: {
+            width: '10rem',
+            height: '100%',
+        },
+    }
+
     return (
-        <Box id='home' sx={{ m: '0 auto 0 auto', p: '6rem 0 5rem 0', width: '40%', height: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <Box>
-                <Typography variant='h4' component='h1' sx={{ translate: '-0.08rem 0' }}>Hello, I'm Keith LePoidevin</Typography>
-                <Typography variant='h6' component='h2' sx={{ lineHeight: '1.2rem' }}>A Full-Stack developer with a focus on Front-End React</Typography>
-                <Box sx={{ display: 'flex', flexDirection: 'column', mt: '0.2rem' }}>
-                    <Box sx={{ display: 'flex', translate: '-0.25rem 0' }}>
-                        <PlaceIcon />
-                        <Typography sx={{ mt: '0.2rem' }}>US, Washington State</Typography>
-                    </Box>
-                    <Box sx={{ display: 'flex', alignItems: 'baseline', mt: '0.3rem' }}>
-                        <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit' }}>
-                            <GitHubIcon fontSize='large' />
-                        </Link>
-                        <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit' }}>
-                            <LinkedInIcon fontSize='large' sx={{ ml: '0.3rem', mr: '0.3rem' }} />
-                        </Link>
-                        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                            <EmailIcon fontSize='large' sx={{ mr: '0.1rem' }} />
-                            <Typography variant='h6' component='p'>klepoidevin3@gmail.com</Typography>
-                        </Box>
-                    </Box>
+        <Box id='home' sx={styles.container}>
+            <Box sx={{ m: { xs: '0 0 2rem 0', sm: '0 8rem 0 2rem' } }}>
+                <Typography variant='h4' component='h1'>Hello, I'm Keith LePoidevin</Typography>
+                <Typography variant='subtitle1' component='p' sx={{ ml: '0.1rem' }}>A Full-Stack developer with a focus on Front-End React</Typography>
+                <Box sx={{ display: 'flex', translate: '-0.3rem 0' }}>
+                    <PlaceIcon />
+                    <Typography variant='p' component='p' sx={{ mt: '0.3rem' }}>US, Washington State</Typography>
+                </Box>
+                <Box sx={{ display: 'flex', ml: '-0.1rem' }}>
+                    <EmailIcon fontSize='medium' />
+                    <Typography variant='p' component='p' sx={{ ml: '0.1rem' }}>klepoidevin3@gmail.com</Typography>
+                </Box>
+                <Box sx={{ display: 'flex', ml: '-0.25rem' }}>
+                    <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={styles.githubIcon}>
+                        <GitHubIcon fontSize='large' />
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/keith-lepoidevin-196a21195' target='_blank' rel='noopener noreferrer' sx={styles.linkedinIcon}>
+                        <LinkedInIcon fontSize='large' />
+                    </Link>
                 </Box>
             </Box>
-            <Box component='img' src="profile-pic-placeholder.jpg" alt='profile image' style={{ width: '10rem', height: '100%' }} />
+            <Box component='img' src="profile-pic-placeholder.jpg" alt='Profile Photo' style={styles.profilePhoto} />
         </Box>
-    )
+    );
 }

@@ -4,8 +4,20 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
+    const styles = {
+        container: {
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            justifyContent: 'center',
+            alignItems: { xs: 'center', sm: 'baseline' },
+            backgroundColor: 'rgba(153, 153, 153, 1)',
+            mt: '5rem',
+            p: '0.5rem',
+        },
+    }
+
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', backgroundColor: 'rgba(153, 153, 153, 1)', p: '0.5rem', mt: '5rem' }}>
+        <Box sx={styles.container}>
             <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit' }}>
                 <GitHubIcon fontSize='large' />
             </Link>
@@ -17,5 +29,5 @@ export default function Footer() {
                 <Typography variant='h6' component='p'>klepoidevin3@gmail.com</Typography>
             </Box>
         </Box>
-    )
+    );
 }

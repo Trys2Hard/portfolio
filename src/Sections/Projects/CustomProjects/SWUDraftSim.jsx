@@ -4,7 +4,7 @@ export default function SWUDraftSim() {
     return (
         <DefaultProject
             src='swudraftsim.png'
-            projectTitle='SWUDraftSim'
+            projectTitle='swudraftsim.com'
             projectSubtitle='A Star Wars Unlimited TCG Draft Simulator'
             buttons={[
                 { href: 'https://github.com/Trys2Hard/swu-draft-sim/', label: 'Source Code' },
