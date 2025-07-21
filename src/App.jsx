@@ -5,6 +5,7 @@ import Projects from './Sections/Projects/Projects';
 import Navbar from './Sections/Navbar';
 import Footer from './Sections/Footer';
 import { GlobalStyles } from '@mui/material';
+import Education from './Sections/Education';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Showcase />
         <Skills />
         <Projects />
+        <Education />
         <Footer />
       </Box>
     </>

@@ -4,9 +4,9 @@ export default function LinkButton({ href, children }) {
     const styles = {
         button: {
             background: 'linear-gradient(to right, rgba(61, 147, 246, 1),rgba(148, 192, 243, 1))',
-            p: '0.6rem',
+            p: '0.5rem',
             borderRadius: '15px',
-            color: 'black',
+            color: 'inherit',
             '&:hover': {
                 filter: 'brightness(1.1)',
             },

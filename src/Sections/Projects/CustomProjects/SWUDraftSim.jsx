@@ -7,8 +7,8 @@ export default function SWUDraftSim() {
             projectTitle='swudraftsim.com'
             projectSubtitle='A Star Wars Unlimited TCG Draft Simulator'
             buttons={[
-                { href: 'https://github.com/Trys2Hard/swu-draft-sim/', label: 'Source Code' },
                 { href: 'https://www.swudraftsim.com/', label: 'Website' },
+                { href: 'https://github.com/Trys2Hard/swu-draft-sim/', label: 'Source Code' },
             ]} />
     );
 }

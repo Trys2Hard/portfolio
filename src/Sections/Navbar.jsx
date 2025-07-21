@@ -8,6 +8,7 @@ export default function Navbar() {
                     <Typography variant="h6" component="a" href="#home">Home</Typography>
                     <Typography variant="h6" component="a" href="#skills">Skills</Typography>
                     <Typography variant="h6" component="a" href="#projects">Projects</Typography>
+                    <Typography variant="h6" component="a" href="#education">Education</Typography>
                 </Toolbar>
             </AppBar>
         </Box>

@@ -12,7 +12,7 @@ export default function Showcase() {
             justifyContent: 'center',
             alignItems: { xs: 'center', sm: 'flex-start' },
             width: '100%',
-            p: '6rem 1rem 5rem 1rem',
+            p: '6rem 1rem 0 1rem',
 
         },
         githubIcon: {

@@ -7,7 +7,7 @@ export default function DefaultProject({ src, projectTitle, projectSubtitle, but
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            m: '2rem auto 0 auto',
+            m: '1rem auto 0 auto',
             width: { xs: '90%', lg: '60%' },
             p: '1rem',
             borderRadius: '10px',
@@ -34,7 +34,7 @@ export default function DefaultProject({ src, projectTitle, projectSubtitle, but
     return (
         <Box sx={styles.container}>
             <Typography variant='h4' component='h3' sx={styles.title}>{projectTitle}</Typography>
-            <Typography variant='h6' component='h4' sx={styles.subtitle}>{projectSubtitle}</Typography>
+            <Typography variant='subtitle1' component='p' sx={styles.subtitle}>{projectSubtitle}</Typography>
             <Box component='img' src={src} sx={styles.image}></Box>
             <Box sx={styles.buttonContainer}>
                 {buttons.map((btn, index) => (

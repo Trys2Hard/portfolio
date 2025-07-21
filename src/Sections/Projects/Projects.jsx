@@ -5,7 +5,7 @@ import SWUDraftSim from './CustomProjects/SWUDraftSim';
 export default function Projects() {
     return (
         <Box id='projects' sx={{ pt: '5rem' }}>
-            <Typography variant='h3' component='h2' sx={{ textAlign: 'center' }}>Projects</Typography>
+            <Typography variant='h4' component='h2' sx={{ textAlign: 'center' }}>Projects</Typography>
             <SWUDraftSim />
             <KarabastContributions />
         </Box>
