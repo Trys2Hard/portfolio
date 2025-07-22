@@ -1,0 +1,1 @@
+Hello, my name is Keith LePoidevin and this is my web developer portfolio. My focus is on front end React but I have experience in backend work as well. My showcase portfolio project is a Star Wars Unlimited TCG Draft Simulator that I built using the MERN stack. You can view the code on my Github and visit the website at [swudraftsim.com](https://www.swudraftsim.com/).
