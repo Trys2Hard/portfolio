@@ -18,10 +18,10 @@ export default function Footer() {
 
     return (
         <Box sx={styles.container}>
-            <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit' }}>
+            <Link href='https://github.com/Trys2Hard?tab=repositories' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit', '&:hover': { color: 'rgba(33, 52, 253, 1)' } }}>
                 <GitHubIcon fontSize='large' />
             </Link>
-            <Link href='https://www.linkedin.com/in/keith-lepoidevin-196a21195' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit' }}>
+            <Link href='https://www.linkedin.com/in/keith-lepoidevin-196a21195' target='_blank' rel='noopener noreferrer' sx={{ color: 'inherit', '&:hover': { color: 'rgba(33, 52, 253, 1)' } }}>
                 <LinkedInIcon fontSize='large' sx={{ ml: '0.3rem', mr: '0.3rem' }} />
             </Link>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>

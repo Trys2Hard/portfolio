@@ -31,6 +31,7 @@ export default function Showcase() {
         profilePhoto: {
             width: '10rem',
             height: '100%',
+            borderRadius: '50%',
         },
     }
 
@@ -56,7 +57,7 @@ export default function Showcase() {
                     </Link>
                 </Box>
             </Box>
-            <Box component='img' src="profile-pic-placeholder.jpg" alt='Profile Photo' style={styles.profilePhoto} />
+            <Box component='img' src="showcase-photo.jpg" alt='Profile Photo' style={styles.profilePhoto} />
         </Box>
     );
 }

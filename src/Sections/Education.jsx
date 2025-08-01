@@ -2,8 +2,21 @@ import { Box, Typography, Link, List, ListItem } from '@mui/material';
 
 export default function Education() {
     const styles = {
+        container: {
+            pt: '5rem',
+            textAlign: 'center',
+            width: { xs: '90%', lg: '60%' },
+            m: '0 auto 0 auto',
+        },
+        courses: {
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '1rem',
+        },
         courseImg: {
-            width: '20rem',
+            width: '100%',
             height: '100%',
             transition: 'transform 0.5s ease-in-out',
             borderRadius: '10px',
@@ -16,7 +29,7 @@ export default function Education() {
     }
 
     return (
-        <Box id='education' sx={{ pt: '5rem', textAlign: 'center' }}>
+        <Box id='education' sx={styles.container}>
             <Typography variant='h4' component='h2' sx={{ pb: '1rem' }}>Education</Typography>
 
             <Box component='li'>Associate's degree from Clark College 2017-2019</Box>
@@ -24,7 +37,7 @@ export default function Education() {
 
 
 
-            <Box sx={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+            <Box sx={styles.courses}>
                 <Link
                     href='https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=KEEPLEARNING'
                     target="_blank"
